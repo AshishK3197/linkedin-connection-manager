@@ -1,4 +1,4 @@
-# LINKEDIN-BOT 
+# LINKEDIN-CONNECTION-MANAGER 
 A linkedin-bot which automatically accepts all the connection invitations. 
 
 ## Running it locally on your machine 
