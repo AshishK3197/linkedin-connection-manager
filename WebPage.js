@@ -51,12 +51,12 @@ const BasePage = function (customAudio = null) {
   this.signin = async function () {
     let name = process.env.USERNAME || "";
     let password = process.env.PASSWORD || "";
-    let input = await this.findById("session_key");
+    let input = await this.findById("username");
     await input.sendKeys(name);
-    let input2 = await this.findById("session_password");
+    let input2 = await this.findById("password");
     await input2.sendKeys(password);
     let button = await this.findByClassName(
-      "sign-in-form__submit-btn--full-width"
+      "btn__primary--large from__button--floating"
     );
     console.log(button);
     await button.click();

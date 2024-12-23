@@ -8,7 +8,7 @@ async function sleep(timeInS) {
 
 async function startBot() {
 	const page = new BasePage();
-	let site = "https://www.linkedin.com";
+	let site = "https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin";
         await page.visit(site);
 
         await sleep(5)
