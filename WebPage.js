@@ -58,7 +58,6 @@ const BasePage = function (customAudio = null) {
     let button = await this.findByClassName(
       "btn__primary--large from__button--floating"
     );
-    console.log(button);
     await button.click();
   };
 
